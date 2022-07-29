@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Designing nav */
+.logo a {
+    text-decoration: none;
+}
+
+section#navLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar ul {
+    list-style-type: none;
+    display: flex;
+    line-height: 50px;
+}
+
+#navLogo {
+    background: rgb(248, 248, 248);
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navBar li {
+    margin-right: 24px;
+}
+
+.logo span.firWord1 {
+    color: blue;
+}
+
+.logo span.firWord2, .logo small.secWord {
+    color: black;
+}
+
+.logo small.secWord {
+    font-size: 13px;
+}
+
+.logo {
+    margin-left: 24px;
+}
+
+.logo sup {
+    color: black;
+    font-size: 11px;
+}
+
+/* Designing image with content */
+section#imgWContent {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../images/ws.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#imgWContent .heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+section#imgWContent .textContent {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dae6f1;
+    padding: 11px;
+    opacity: 0.9;
+}
+
+#imgWContent div#btn {
+    width: 440px;
+    padding: 11px;
+    text-align: center;
+    background-color: #dae6f1;
+    opacity: 0.9;
+}
+
+#imgWContent button {
+    font-size: large;
+    font-weight: lighter;
+}
+
+/* myFooter1 */
+section.myFooter1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #f8f8f8;
+}
+
+.myFooter1 li a {
+    text-decoration: none;
+    color: black;
+}
+
+.myFooter1 ul li {
+    list-style-type: none;
+    padding: 6px;
+}
+
+/* myFooter2 */
+.navItems {
+    display: flex;
+    text-align: center;
+}
+
+.navItems ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navItems li {
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+.navItems ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyRightSymbol p {
+    text-align: center;
+}
+
+.myFooter2 {
+    background-color: #f8f8f8;
+    border-top: 1px solid #cdd4db;
+}
+
+.navBar li a:hover, .navItems li a:hover,
+.contactUs li.effectHover a:hover, .socialMedia li a:hover {
+    color: blue;
+}
+
+/* bg */
+#bg {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../images/ser.jpg);
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg .h1p {
+    color: #f8f8f8;
+    text-align: center;
+}
+
+#bg h1 {
+    font-size: 50px;
+}
+
+#bg p {
+    font-size: 19px;
+    position: relative;
+    top: -25px;
+}
+
+section.coreSer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 15px 0px 15px;
+}
+
+.ser {
+    padding: 10px;
+    margin: 0px 3px 0px 3px;
+    background-color: white;
+    position: relative;
+    top: -225px;
+    border: 1px solid black;
+}
+
+.icon {
+    height: 56px;
+    width: 56px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon i.fa {
+    font-size: 47px;
+    line-height: 56px;
+}
+
+.ser h3 {
+    text-align: center;
+}
+
+.ser:hover i.fa, .ser:hover h3{
+    color: blue;
+    transition: ease;
+}
+
+.ser:hover .icon{
+    border: 0px;
+}
+
+.ser:hover {
+    border: 1px solid blue;
+}
+
+.ser4 .icon i.fa {
+    font-size: 64px;
+    line-height: 56px;
+}
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+    body {
+      background-color: rgb(235, 235, 235);
+    }
+}
